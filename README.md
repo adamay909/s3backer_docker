@@ -15,11 +15,11 @@ alternative to using a s3backer binary directly on the host machine.
 
 You can start a container with
 
-	docker run OPTIONS adamaymas/images S3BACKER_OPTIONS+ARGUMENTS
+	docker run OPTIONS adamaymas/s3backer_docker S3BACKER_OPTIONS+ARGUMENTS
 
 Inside the container, this will simply run 
 
-	s3backer S3BACKER_OPTIONS BUCKET+ARGUMENTS
+	s3backer S3BACKER_OPTIONS+ARGUMENTS
 
 
 The main difference between using the plain s3backer binary and this image is
@@ -37,7 +37,7 @@ E.g., to create and/or mount an S3 bucket as an S3 backed file, do:
 	    -v HOST_MOUNTPOINT:/s3b:shared \
 	    --device /dev/fuse \
 	    --cap-add SYS_ADMIN \
-	 adamaymas/s3backer \
+	 adamaymas/s3backer_docker \
 	 S3BACKER_OPTIONS BUCKET /s3b
 
 
