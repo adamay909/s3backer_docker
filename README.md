@@ -8,7 +8,7 @@ backed by Amazon S3. You can then mount a normal file system (e.g., ext4, xfs,
 etc) on top of this virtual file as a loopback device.
 
 
-You can use starting a container based on this image almost as a drop-in
+You can use a container based on this image almost as a drop-in
 alternative to using a s3backer binary directly on the host machine. 
 
 ## Basic Usage
