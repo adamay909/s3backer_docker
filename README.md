@@ -48,7 +48,7 @@ E.g., to create and/or mount an S3 bucket as an S3 backed file, do:
 
 
 
-Consult [s3backer documentation](https://github.com/archiecobbs/s3backer/wiki) the for the needed S3BACKER_OPTIONS for creating an S3 backed file, 
+Consult the [s3backer documentation](https://github.com/archiecobbs/s3backer/wiki)  for the needed S3BACKER_OPTIONS for creating an S3 backed file, 
 etc.
 
 The mount point for the s3backer file inside the container is /s3b.  A host
