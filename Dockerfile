@@ -26,12 +26,12 @@ RUN	./autogen.sh &&\
 	./configure &&\
 	make dist &&\ 
 	./autogen.sh &&\
-	./configure --prefix /opt/build &&\
+	./configure &&\
 	make &&\
 	cp s3backer /s3backer
 
 
-FROM alpine:3.8 as plain
+FROM alpine:3.8
 WORKDIR /
 COPY --from=builder /s3backer /usr/bin/s3backer
 
