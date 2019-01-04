@@ -15,7 +15,8 @@ A docker image is available on Docker Hub. You can get it with:
 
 	docker pull adamaymas/s3backer_docker
 
-You can also build it yourself using the Dockerfile supplied here.
+You can also build it yourself using the Dockerfile available at:
+[https://github.com/adamay909/s3backer_docker/](https://github.com/adamay909/s3backer_docker/).
 
 ## Basic Usage
 
@@ -36,7 +37,7 @@ Inside the container, this will simply run
 
 The -f is to keep the process in the foreground so as to prevent the container from
 exiting immediately. If you start the container without any S3BACKER_OPTIONS+ARGUMENTS, it will
-display the help message for s3backer and exit..
+display the help message for s3backer and exit.
 
 The main difference between using the plain s3backer binary and this image is
 that this image will mount the S3 backed file inside the container and you need
