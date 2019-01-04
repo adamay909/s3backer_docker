@@ -11,6 +11,12 @@ etc) on top of this virtual file as a loopback device.
 You can use a container based on this image almost as a drop-in
 alternative to using a s3backer binary directly on the host machine. 
 
+A docker image is available on Docker Hub. You can get it with:
+
+	docker pull adamaymas/s3backer_docker
+
+You can also build it yourself using the Dockerfile supplied here.
+
 ## Basic Usage
 
 You can start a container with
